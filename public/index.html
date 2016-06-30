@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player Test File</title>
+    <link rel="stylesheet" href="css/css.css">
+
+</head>
+<body>
+<div id="video-container">
+    <video id="video" width="640" height="365">
+        <source src="videos/hippo.mp4" type="video/mp4">
+        <source src="videos/hippo.webm" type="video/webm">
+    </video>
+    <div id="video-controls">
+        <button type="button" id="play-pause">Play</button>
+        <input type="range" id="seek-bar" value="0">
+        <button type="button" id="mute">Mute</button>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+        <button type="button" id="full-screen">Full-Screen</button>
+        <div id="current">0:00</div>
+        <div id="duration">0:00</div>
+        <button type="button" id="nextvideo">Next video!</button>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
